@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:lts-alpine as build-stage
 COPY ./ /app
 WORKDIR /app
 # 安装cnpm
